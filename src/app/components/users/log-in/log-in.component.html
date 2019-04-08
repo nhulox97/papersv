@@ -1,0 +1,84 @@
+<!--<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bg_section_login">
+      </div>
+      <div class="col-12 m_bg_section_login">
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 login_section">
+        <form class="needs-validation" novalidate>
+          <h1>Iniciar Sesion <i class="mdi mdi-content-save-settings-outline"></i></h1>
+          <div class="error" id="user-error">
+            <img src="../../../../images/icon_error.svg" alt="error_icon" />
+            usuario Incorrecto
+          </div>
+          <div class="error" id="pass-error">
+            <img src="../../../../images/icon_error.svg" alt="error_icon" />
+            contraseña Incorrecta
+          </div>
+          <div class="form-row">
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Usuario"
+              required #usrEmail>
+          </div>
+          <div class="form-row">
+            <input type="password" class="form-control" id="password" placeholder="Contraseña" required #usrPassword>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="login_check">
+            <label class="form-check-label" for="login_check">Mantente conectado</label>
+            <a>Olvide Contraseña</a>
+          </div>
+          <button type="button" class="btn btn-primary" (click)="authService.SignIn(usrEmail.value, usrPassword.value)">Iniciar Sesion</button>
+          <button type="button" class="btn btn-outline-primary" routerLink= "/signIn">Regístrate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+<section class="login-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 login-sec">
+        <h2 class="text-center">Identificate</h2>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="text-uppercase"></label>
+            <input type="text" class="form-control" placeholder="Email" #usrEmail>
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="text-uppercase"></label>
+            <input type="password" class="form-control" placeholder="Contraseña" #usrPassword>
+          </div>
+
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              <small>Recordarme</small>
+            </label>
+            <button type="button" (click)="authService.SignIn(usrEmail.value, usrPassword.value)"
+              class="btn btn-login float-right">Iniciar Sesion</button>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="col-md-8   banner-sec">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg"
+                alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

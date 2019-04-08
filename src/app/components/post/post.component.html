@@ -1,0 +1,94 @@
+<!-- Sistemas de columnas -->
+<div class="container-fluid mt-5 pt-5">
+  <div class="row">
+    <!-- columnas izquierda -->
+    <div class="col-sm-4 col-lg-3">
+      <!-- informacion personal -->
+      <div class="card ">
+        <img src="assets/Periodismo_Digital.jpg" class="card-img-top" alt="...">
+        <div class="text-center subir">
+          <img
+            src="assets/ansel-elgort-poses-for-a-portrait-during-the-baby-driver-premiere-2017-sxsw-conference-and-festivals-on-march-11-2017-in-austin-texas-photo-by-matt-winkelmeyer_getty-imagesfor-sxsw-square.jpg"
+            alt="" class="rounded-circle" width="100" height="100">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title text-center">Nombre</h5>
+          <p class="card-text text-center lead">"Compartenos un comentario de que te parece papersv aqui Abajo!"</p>
+        </div>
+      </div>
+      <!-- informacion personal -->
+
+      <!-- Descripcion -->
+      <div class="card mt-3 ">
+        <div class="card-header">
+          Comentario
+        </div>
+        <div class="card-body">
+          <blockquote>
+            <textarea class="form-control noresize" placeholder="Escribe tu comentario Aqui !" id="encCss"></textarea>
+            <br>
+            <a href="#" class="btn btn-primary">Publicar</a>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Descripcion -->
+    </div>
+    <!-- columnas izquierda -->
+
+
+    <!-- columnas derecha -->
+    <div class="col-sm-8 col-lg-9 mt-3  mt-sm-0">
+      <div class="card mr-sm-3 ">
+        <ul class="list-group list-group-flush">
+          <!-- publicaciones -->
+          <li class="list-group-item publicaciones">
+            <div class="row">
+              <!-- foto -->
+              <div class="col-lg-1">
+                <img
+                  src="assets/ansel-elgort-poses-for-a-portrait-during-the-baby-driver-premiere-2017-sxsw-conference-and-festivals-on-march-11-2017-in-austin-texas-photo-by-matt-winkelmeyer_getty-imagesfor-sxsw-square.jpg"
+                  alt="" class="rounded-circle" width="60" height="60">
+              </div>
+              <!-- foto -->
+
+              <!-- articulo -->
+              <div class="col-lg-11">
+                <h5>Nombre</h5>
+                <br>
+                <textarea class="form-control noresize" placeholder="Escribe tu Post Aqui!" id="encCss" #postContent></textarea>
+              </div>
+              <!-- articulo -->
+              <!-- me gusta -->
+              <div class="post-1 mt-3">
+                <button type="button" (click)="add(postContent.value)" class="btn btn-primary btn-sm">Verificar</button>
+              </div>
+              <!-- me gusta -->
+
+              <!-- Descripcion -->
+              <div class="card col-lg-12 mt-4">
+                <div class="card-header">
+                  Correccion
+                </div>
+                <div class="card-body">
+                  <blockquote>
+                    <textarea disabled="false" class="form-control noresize"
+                      placeholder="La correccion de tu Post esta Aqui!" id="encCss"></textarea>
+                    <br>
+                    <a href="#" class="btn btn-primary">Publicar</a>
+                  </blockquote>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <br>
+        </ul>
+
+      </div>
+    </div>
+    <!-- columnas derecha -->
+
+  </div>
+</div>
+<!-- Sistemas de columnas -->
