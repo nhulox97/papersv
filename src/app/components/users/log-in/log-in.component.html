@@ -61,6 +61,9 @@
             </label>
             <button type="button" (click)="authService.SignIn(usrEmail.value, usrPassword.value)"
               class="btn btn-login float-right">Iniciar Sesion</button>
+
+              <br><br>
+            <h6 class="text-info float-right" [routerLink]="['/signIn']">Aun no tienes una cuenta? Registrate.</h6>
           </div>
 
         </form>

@@ -51,7 +51,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 login-sec">
-        <h3 class="text-center text-info">Identificate</h3>
+        <h2 class="text-center">Identificate</h2>
         <form class="login-form">
           <div class="form-group">
             <label for="exampleInputEmail1" class="text-uppercase"></label>
@@ -70,7 +70,8 @@
             </label>
             <br>
             <button type="button" class="btn btn-login float-right" (click)="authService.SignUp(email.value, password.value, displayName.value)">Crear Cuenta</button>
-
+            <br><br>
+            <h6 class="text-info float-right" [routerLink]="['/logIn']">Ya tienes una cuenta?</h6>
 
           </div>
 
