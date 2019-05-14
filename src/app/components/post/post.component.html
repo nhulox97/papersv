@@ -16,8 +16,7 @@
           <p class="card-text text-center lead">"Compartenos un comentario de que te parece papersv aqui Abajo!"</p>
         </div>
       </div>
-      <!-- informacion personal -->
-
+      
       <!-- Descripcion -->
       <div class="card mt-3 ">
         <div class="card-header">
@@ -25,7 +24,7 @@
         </div>
         <div class="card-body">
           <blockquote>
-            <textarea class="form-control noresize" placeholder="Escribe tu comentario Aqui !" id="encCss"></textarea>
+            <textarea class="form-control noresize2" placeholder="Escribe tu comentario Aqui !" id="encCss"></textarea>
             <br>
             <a href="#" class="btn btn-primary">Publicar</a>
           </blockquote>
@@ -52,34 +51,19 @@
               <!-- foto -->
 
               <!-- articulo -->
-              <div class="col-lg-11">
+              <div  class="col-lg-11">
+                <br>
                 <h5>Nombre</h5>
                 <br>
-                <textarea class="form-control noresize" placeholder="Escribe tu Post Aqui!" id="encCss" #postContent></textarea>
+                <textarea id="text" onKeyUp="check_val()" class="form-control noresize" placeholder="Escribe tu Post Aqui!"></textarea>
+                <p id="bad_notice"></p>
               </div>
-              <!-- articulo -->
+
               <!-- me gusta -->
               <div class="post-1 mt-3">
-                <button type="button" (click)="add(postContent.value)" class="btn btn-primary btn-sm">Verificar</button>
+                <button type="button" (click)="add(postContent.value)" class="btn btn-primary btn-sm">Publicar</button>
               </div>
               <!-- me gusta -->
-
-              <!-- Descripcion -->
-              <div class="card col-lg-12 mt-4">
-                <div class="card-header">
-                  Correccion
-                </div>
-                <div class="card-body">
-                  <blockquote>
-                    <textarea disabled="false" class="form-control noresize"
-                      placeholder="La correccion de tu Post esta Aqui!" id="encCss"></textarea>
-                    <br>
-                    <a href="#" class="btn btn-primary">Publicar</a>
-                  </blockquote>
-                </div>
-              </div>
-
-
             </div>
           </li>
           <br>

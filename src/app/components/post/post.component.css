@@ -28,6 +28,12 @@ footer p a:hover {
 }
 
 .noresize {
+    max-width: 90%;
+    max-height: 200px;
+    height: 150px;
+}
+
+.noresize2 {
     resize: none;
 }
 
@@ -47,4 +53,30 @@ footer p a:hover {
 .post-1 {
     margin-top: 10px;
     margin-left: 80%;
+}
+
+#wrapper{
+	width:60%; 
+	margin:auto; 
+	height:350px; 
+	margin-top:70px
+}
+#text{
+	width:100%;
+	height:250px; 
+	font-size:24px;
+}
+#bad_notice{
+	text-align:center; 
+	color:#D30003; 
+	margin-top:10px; 
+	font-size:26px;
+}
+h1
+{
+ margin:auto;
+ font-size:50px;
+ color:#525252;
+ line-height:3em;
+ text-align:center;
 }
